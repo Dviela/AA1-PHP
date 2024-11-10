@@ -1,0 +1,100 @@
+/* styles.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e6ed;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.resultado  {
+    color: blue;
+    margin-top: 8px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 2em;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+p{
+    font-family: Tahoma, serif;
+    color: #333333;
+    padding: 7px;
+
+}
+h1 {
+    color:darkslateblue;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+h3 {
+    color:#333333;
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+label{
+    font-size: small;
+    color: dimgray;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1em 0;
+}
+
+li {
+    margin: 0.5em 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #007acc;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    border: 2px solid #007acc;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+a:hover {
+    background-color: #007acc;
+    color: #fff;
+}
+
+/* Botones submit */
+button[type="submit"] {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 7px 11px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer; /* Cambia el cursor a una mano */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: darkslateblue; /* Cambia el color al pasar el ratón */
+    transform: translateY(-2px); /* Efecto elevación */
+}
+
+button[type="submit"]:active {
+    background-color: darkblue; /* Color al hacer clic */
+    transform: translateY(1px); /* Mueve el botón un poco hacia abajo */
+}

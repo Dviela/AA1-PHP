@@ -19,30 +19,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Switch</title>
-    <link rel="stylesheet" href="../styles/styles.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Switch</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Switch</title>
+        <link rel="stylesheet" href="../styles/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Switch</h1>
 
-        <!-- Formulario para ingresar la nota -->
-        <form action="" method="post">
-            <label for="numero">Introduce aquí tu nota (1-10):</label>
-            <input type="number" name="numero" id="numero" min="1" max="10" required>
-            <button type="submit">Evaluar Número</button>
-        </form>
+            <!-- Formulario para ingresar la nota -->
+            <form action="" method="post">
+                <label for="numero">Introduce aquí tu nota (1-10):</label>
+                <input type="number" name="numero" id="numero" min="1" max="10" required>
+                <button type="submit">Evaluar Número</button>
+            </form>
 
-        <div class="resultado">
-            <h3>Resultado:</h3>
-            <?php
-            // Mostrar el resultado si se ha procesado el formulario
-            echo $resultado;
-            ?>
+            <div class="resultado">
+                <h3>Resultado:</h3>
+                <?php
+                // Mostrar el resultado si se ha procesado el formulario
+                echo $resultado;
+                ?>
+            </div>
         </div>
-    </div>
-</body>
+        <button type="button" onclick="window.location.href='index.php'" class="boton-volver">Volver</button>
+    </body>
 </html>

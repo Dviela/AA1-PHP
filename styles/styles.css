@@ -98,3 +98,18 @@ button[type="submit"]:active {
     background-color: darkblue; /* Color al hacer clic */
     transform: translateY(1px); /* Mueve el botón un poco hacia abajo */
 }
+.boton-volver {
+    position: fixed;
+    bottom: 20px;
+    left: 50px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton-volver:hover {
+    background-color: #0056b3;
+}

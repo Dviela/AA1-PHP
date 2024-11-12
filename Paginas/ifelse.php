@@ -22,30 +22,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IfElse</title>
-    <link rel="stylesheet" href="../styles/styles.css">
-</head>
-<body>
-<div class="container">
-    <h1>If-Else</h1>
-    <p>Introduce un número para comprobar si es Par o Impar</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IfElse</title>
+        <link rel="stylesheet" href="../styles/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>If-Else</h1>
+            <p>Introduce un número para comprobar si es Par o Impar</p>
 
-    <!-- Formulario para ingresar número -->
-    <form action="ifelse.php" method="post">
-        <label for="numero">Número:</label>
-        <input type="number" id="numero" name="numero" required>
-        <button type="submit">Enviar</button>
-    </form>
-    <!-- Mostrar el resultado después de enviar el formulario -->
-    <div class="resultado">
-        <?php
-        // Mostrar el resultado si se ha procesado el formulario
-        echo $resultado;
-        ?>
-    </div>
-</div>
-</body>
+            <!-- Formulario para ingresar número -->
+            <form action="ifelse.php" method="post">
+                <label for="numero">Número:</label>
+                <input type="number" id="numero" name="numero" required>
+                <button type="submit">Enviar</button>
+            </form>
+            <!-- Mostrar el resultado después de enviar el formulario -->
+            <div class="resultado">
+                <?php
+                // Mostrar el resultado si se ha procesado el formulario
+                echo $resultado;
+                ?>
+            </div>
+            <button type="button" onclick="window.location.href='index.php'" class="boton-volver">Volver</button>
+        </div>
+    </body>
 </html>

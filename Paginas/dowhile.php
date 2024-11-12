@@ -41,5 +41,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 ?>
             </div>
         </div>
+        <button type="button" onclick="window.location.href='index.php'" class="boton-volver">Volver</button>
     </body>
 </html>

@@ -23,6 +23,5 @@
                 <li><a href="continue.php">Continue</a></li>
             </ul>
         </div>
-        <button type="button" onclick="window.location.href='index.php'" class="boton-volver">Volver</button>
     </body>
 </html>

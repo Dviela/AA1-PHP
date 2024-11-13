@@ -1,8 +1,7 @@
 <?php
-// Incluir la clase EvaluadorNumero
 use Clases\Evaluador;
 
-require_once "../Clases/Evaluador.php";
+require_once "../clases/Evaluador.php";
 
 $resultado = "";
 
@@ -23,13 +22,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Switch</title>
-        <link rel="stylesheet" href="../styles/styles.css">
+        <link rel="stylesheet" href="../estilos/styles.css">
     </head>
     <body>
         <div class="container">
             <h1>Switch</h1>
 
-            <!-- Formulario para ingresar la nota -->
+            <!-- Formulario -->
             <form action="" method="post">
                 <label for="numero">Introduce aquí tu nota (1-10):</label>
                 <input type="number" name="numero" id="numero" min="1" max="10" required>
@@ -39,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="resultado">
                 <h3>Resultado:</h3>
                 <?php
-                // Mostrar el resultado si se ha procesado el formulario
+                // Muestra el resultado si se ha procesado el formulario
                 echo $resultado;
                 ?>
             </div>

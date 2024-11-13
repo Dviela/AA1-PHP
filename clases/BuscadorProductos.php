@@ -19,7 +19,7 @@ class BuscadorProductos
         ];
         $this->limitePrecio = (float) $limitePrecio;
     }
-
+    ////Ejemplo Break
     public function buscarProductos() {
         $resultado = "";
         foreach ($this->productos as $producto) {

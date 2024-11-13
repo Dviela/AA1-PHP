@@ -1,15 +1,13 @@
 <?php
-// Incluir la clase Numero
 use Clases\Contador;
 
-require_once '../Clases/Contador.php';
+require_once '../clases/Contador.php';
 
 $resultado = "";
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $limite = $_POST['limite'];
     $contador = new Contador($limite);
-    $resultado = $contador->cuentaRegresiva();
+    $resultado = $contador->contarHasta();
 }
 
 ?>
@@ -19,24 +17,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Do While</title>
-        <link rel="stylesheet" href="../styles/styles.css">
+        <title>While</title>
+        <link rel="stylesheet" href="../estilos/styles.css">
     </head>
     <body>
         <div class="container">
-            <h1>Do While</h1>
-            <p>Cuenta Regresiva desde el número especificado</p>
+            <h1>While</h1>
+            <p>¿Hasta qué número quieres contar?</p>
             <br>
-            <form action="dowhile.php" method="post">
-                <label for="inicio">Nº de Inicio</label>
+            <form action="while.php" method="post">
+                <label for="limite">Nº Límite</label>
                 <input type="number" name="limite" id="limite" min="1" required>
-                <button type="submit">Iniciar</button>
+                <button type="submit">Contar</button>
             </form>
             <!-- Muestra el resultado después de enviar el formulario -->
             <div class="resultado">
                 <h3>Resultado:</h3>
                 <?php
-                // Mostrar el resultado del contador
                 echo $resultado;
                 ?>
             </div>

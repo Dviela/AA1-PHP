@@ -31,15 +31,15 @@ class FiltroJugadores
     {
         $resultado = "";
         foreach ($this->jugadores as $jugador) {
-            // Si el jugador no pertenece a la posición filtrada, saltar esta iteración
+            // Si el jugador no pertenece a la posición filtrada, se lo salta
             if ($jugador["posicion"] !== $this->posicionFiltro) {
                 continue;
             }
-            // Agregar el jugador al resultado si cumple con el filtro
+            // Agrega jugador al resultado si cumple con el filtro
             $resultado .= "Jugador: {$jugador['nombre']} - Posición: {$jugador['posicion']}<br>";
         }
 
-        // Si no se encontró ningún jugador en la posición filtrada
+        // Si no se encontrase ningún jugador en la posición
         if (empty($resultado)) {
             $resultado = "No se encontraron jugadores en la posición: $this->posicionFiltro.<br>";
         }

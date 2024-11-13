@@ -4,16 +4,17 @@ namespace Clases;
 class Paises {
     private $paises = [];
 
+    //Ejemplo Foreach
     public function __construct($cadenaPaises) {
-        // Convertimos la cadena de países en un array, separando por comas
+        // Convierte la cadena de países en un array, separando por comas
         $paisesSinLimpiar = explode(",", $cadenaPaises);
 
-        // Recorremos cada país y eliminamos los espacios alrededor
+        // Recorre cada país y elimina espacios alrededor
         foreach ($paisesSinLimpiar as $pais) {
             $this->paises[] = trim($pais);
         }
     }
-//Ejemplo Foreach
+
     public function obtenerListaPaises() {
         $resultado = "<ol>";
         for ($i = 0; $i < count($this->paises); $i++) {
@@ -23,4 +24,4 @@ class Paises {
         return $resultado;
     }
 }
-?>
+

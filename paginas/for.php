@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>For</title>
-        <link rel="stylesheet" href="../styles/styles.css">
+        <link rel="stylesheet" href="../estilos/styles.css">
     </head>
     <body>
         <div class="container">
@@ -29,7 +29,7 @@
                     $palabra = $_POST['palabra'];
                     $repeticiones = (int)$_POST['repeticiones'];
 
-                    // Usamos For para repetir la palabra
+                    //Bucle For para repetir la palabra indicada
                     for ($i = 0; $i < $repeticiones; $i++) {
                         echo "Repetición " . ($i + 1) . ": " . htmlspecialchars($palabra) . "<br>";
                     }

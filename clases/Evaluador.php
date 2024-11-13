@@ -13,6 +13,7 @@ class Evaluador
     //Ejemplo Switch
     public function obtenerNota() {
         switch ($this->numero) {
+            //Del 1 al 4 mismo resultado
             case 1:
             case 2:
             case 3:

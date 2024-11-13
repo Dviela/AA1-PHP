@@ -1,8 +1,7 @@
 <?php
-// Incluir la clase Numero
 use Clases\Numero;
 
-require_once '../Clases/Numero.php';
+require_once '../clases/Numero.php';
 
 // Inicializar el resultado vacío
 $resultado = "";
@@ -26,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Elseif</title>
-        <link rel="stylesheet" href="../styles/styles.css">
+        <link rel="stylesheet" href="../estilos/styles.css">
     </head>
     <body>
         <div class="container">
@@ -39,10 +38,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="number" id="numero" name="numero" required>
                 <button type="submit">Enviar</button>
             </form>
-            <!-- Mostrar el resultado después de enviar el formulario -->
+            <!-- Muestra el resultado después de enviar el formulario -->
             <div class="resultado">
                 <?php
-                // Mostrar el resultado si se ha procesado el formulario
                 echo $resultado;
                 ?>
             </div>

@@ -2,7 +2,7 @@
 
 use Clases\Paises;
 
-require_once '../Clases/Paises.php';
+require_once '../clases/Paises.php';
 
 $resultado = "";
 
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Foreach</title>
-        <link rel="stylesheet" href="../styles/styles.css">
+        <link rel="stylesheet" href="../estilos/styles.css">
     </head>
     <body>
         <div class="container">
@@ -33,11 +33,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="text" name="paises" id="paises" required>
                 <button type="submit">Guardar Países</button>
             </form>
+            <!-- Muestra el resultado después de enviar el formulario -->
             <div class="resultado">
                 <h3>Tus Países favoritos:</h3>
                 <div>
                     <?php
-                    // Mostrar el resultado si se ha procesado el formulario
                     echo $resultado;
                     ?>
             </div>
